@@ -17,7 +17,7 @@
 		<div class="container-fluid">
 			<h1 class="text-center"> Task List </h1>
 			<br>
-			<ul class="nav nav-pills">
+			<ul class="nav nav-pills sideNav">
 			  <li role="presentation">
 			  	<a href="menu">Homepage	</a>
 			  </li>
@@ -47,15 +47,15 @@
 			<%
 				HashMap<Integer, Integer> idHash = new HashMap();
 				List <Task> tasks = (List<Task>)request.getAttribute("tasks");
-				out.println("<table class='table table-striped table-hover'>");
+				out.println("<table class='table table-striped fixedTable table-hover'>");
 				out.println("<thead><tr><th>Task ID</th><th>Task title</th><th>Task description</th><th>Staus of the task</th></tr></thead>");
 				for(int i=0; i<tasks.size(); i++) {
 					
 					int colNum = i+1;
 					idHash.put(colNum, tasks.get(i).getTaskID());
-					out.println("<tr><td>" + colNum + "</td><td>"+
-							tasks.get(i).getTitle() + "</td><td>"+ 
-							tasks.get(i).getTaskDescription() + "</td><td>"+
+					out.println("<tr><td class='sizefield'>" + colNum + "</td><td class='sizefield'>"+
+							tasks.get(i).getTitle() + "</td><td class='sizefield'>"+ 
+							tasks.get(i).getTaskDescription() + "</td ><td class='sizefield'>"+
 							tasks.get(i).getStatus() + "</td></tr>");
 				}
 				

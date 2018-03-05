@@ -21,14 +21,13 @@
 				User user = (User)session.getAttribute("user");
 				String fname = user.getFirstname();
 				out.write("<h1 class='text-center'> Homepage</h1>");
-				//out.write("<h1 class='text-center'> Greetings  " + fname + " ! Good to have you here..</h1>");
-				//request.setAttribute("firstname", fname);
+
 			%>
 			
 			<br>
 						
 			
-			<ul class="nav nav-pills dropdown">
+			<ul class="nav nav-pills dropdown sideNav">
 			  <li role="presentation" class="active">
 			  	<a href="menu">Homepage </span></a>
 			  </li>
@@ -65,8 +64,8 @@
 			<%	
 				String mail = user.getMail();
 				String lanme = user.getLastname();
-				out.write("<h4 class='text-center'> " + fname +" " + lanme + " </h4>");
-				out.write("<h4 class='text-center'> " + mail + " </h4>");
+				out.write("<h4 class='text-center'> "+ "Wellcom " + fname +" " + lanme + " !"+" </h4>");
+				//out.write("<h4 class='text-center'> " + mail + " </h4>");
 				request.setAttribute("firstname", fname);
 			%>
 								

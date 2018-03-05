@@ -14,7 +14,7 @@
 		<div class="container-fluid">
 			<h1 class="text-center">Who Developed This?</h1>
 			<br>
-			<ul class="nav nav-pills">
+			<ul class="nav nav-pills sideNav">
 			  <li role="presentation">
 			  	<a href="menu">Homepage </a>
 			  </li>
@@ -40,14 +40,14 @@
 			  </li>
 			</ul>
 			<br>
-			<p>
+			<p class="fixedP">
 				This project was developed as part of the JavaEE course in Shenkar College.
-				This application can maintain tasks, modify, add and remove them. We used MySQL server to hold the data
-				and Bootstrap for the view. The project is written under MVC design pattern and uses Hibernate's ORM.
+				This application can maintain tasks, modify, <br> add and remove them. We used MySQL server to hold the data
+				and Bootstrap for the view.<br> The project is written under MVC design pattern and uses Hibernate's ORM.
 				<br>
 				All design rights go to whoever made this Bootstrap template. He was First on google.
 				<br><br><br><br>
-				<h3>Cheers, Shay Rubach & Idan Lazimi & Reut Leib.</h3>
+				<h3 class="fixedH3">Cheers, Shay Rubach & Idan Lazimi & Reut Leib.</h3>
 			</p>
 
 		</div>

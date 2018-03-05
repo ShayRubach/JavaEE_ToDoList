@@ -460,6 +460,7 @@ textarea {
 table {
   border-collapse: collapse;
   background-color: transparent;
+ 
 }
 
 caption {
@@ -3829,6 +3830,7 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  
 }
 
 .nav-link {
@@ -7336,6 +7338,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 @media (min-width: 576px) {
   .float-sm-left {
     float: left !important;
+    
   }
   .float-sm-right {
     float: right !important;
@@ -7360,6 +7363,8 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 @media (min-width: 992px) {
   .float-lg-left {
     float: left !important;
+    left: 10px !important;
+    top: 10px !important;
   }
   .float-lg-right {
     float: right !important;
