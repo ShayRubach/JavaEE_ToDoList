@@ -2,8 +2,7 @@ package com.shenkar.hibernate.model;
 
 
 /**
- * User class
- * USER table in the Database
+ * mapped to USER table
  */
 
 public class User {
@@ -16,7 +15,7 @@ public class User {
 
 
 	   /**
-	   * constructor
+	   * def constructor - must
 	   */
 	   public User() {}
 	   

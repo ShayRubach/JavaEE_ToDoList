@@ -1,8 +1,7 @@
 package com.shenkar.hibernate.model;
 
 /**
- * Task Class
- * TASK table in the Database
+ * mapped to TASK table 
  */
 
 public class Task {
@@ -14,7 +13,7 @@ public class Task {
 		private String taskDescription;
 
 	   /**
-	   * constructor
+	   * def constructor - must
 	   */
 	   public Task() {}
 
