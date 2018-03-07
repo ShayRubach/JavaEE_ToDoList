@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-	<class name="com.shenkar.hibernate.model.Contact" table="Contact_list">
+	<class name="com.lifemichael.javaee.model.Contact" table="Contact_list">
 		<id name="contactID" type="int" column="Contact_id" > 
 			<generator class="increment"/>	
 		</id>

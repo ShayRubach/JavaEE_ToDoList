@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-	<class name="com.shenkar.hibernate.model.Task" table="todo_list">
+	<class name="com.lifemichael.javaee.model.Task" table="todo_list">
 		<id name="taskID" type="int" column="Task_id" > 
 			<generator class="increment"/>	
 		</id>

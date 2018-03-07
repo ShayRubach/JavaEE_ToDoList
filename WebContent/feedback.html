@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Feedback</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/myCustomCss.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+		<div class="container">
+			<h1 class="text-center">Feedback</h1>
+			<br>
+			<ul class="nav nav-pills sideNav">
+			  <li role="presentation">
+			  	<a href="menu">Homepage </a>
+			  </li>
+			   <li class="dropdown">
+			  	<a class="dropdown-toggle" data-toggle = "dropdown" href="taskslist">Task list
+			  		 <span class="caret"></span>
+			  	</a>
+			  	<ul class="dropdown-menu">
+			  		<li><a href="taskslist">Tasks</a></li>
+        	    	<li><a href="addTask">Add Task</a></li>
+            		<li><a href="removetask">Delete task</a></li>
+            		<li><a href="edittask">Modify task</a></li> 
+        	 	</ul>
+			  </li>
+			  <li>
+			  	<a href="about">Who Developed This?</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="logout">Sign Out </a>
+			  </li>
+			  <li role="presentation" class="active">
+			  	<a href="feedback">Feedback </a>
+			  </li>
+			</ul>
+		</div>
+
+<div class="jumbotron text-center">
+  <h3 class="text-center koteret">Feedback?</h3>
+  <div class="row test">
+    
+    <div class="col-md-8 fixesPos">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+        <form action= "contactbean.jsp" METHOD="POST">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comment" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+      <br>
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" name = "sendcommet" type="submit">Launch</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ---
+<form action="checkbean.jsp" METHOD="get">
+	
+Name <input type="text" name= "name">
+<br>
+mail <input type="text" name = "email">
+<br>
+comment <input type="text" name = "comment"> 
+<br>
+<input type="submit">
+</form>
+
+ -->
+
+
+</body>
+</html>
