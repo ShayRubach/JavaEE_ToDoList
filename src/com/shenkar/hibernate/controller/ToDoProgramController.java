@@ -86,7 +86,7 @@ public class ToDoProgramController extends HttpServlet {
 			
 		//Insert new Task
 		} else if(url.endsWith("insert")){
-			tempURL = addNewTask(request, response);
+			tempURL = addTask(request, response);
 			
 		//Remove the requested Task
 		} else if (url.endsWith("delete")) {
@@ -476,7 +476,7 @@ public class ToDoProgramController extends HttpServlet {
 	 * @param request
 	 * @param response
 	 */
-	private String addNewTask(HttpServletRequest request, HttpServletResponse response) {
+	private String addTask(HttpServletRequest request, HttpServletResponse response) {
 		String tempURL = null;
 		String title = request.getParameter("title");
 		String sts = request.getParameter("status");
@@ -489,7 +489,7 @@ public class ToDoProgramController extends HttpServlet {
 			String mail = currentUser.getMail();
 			Task newTask = new Task(mail, title, description, sts);
 			try {
-				HibernateToDoListDAO.getInstance().addNewTask(newTask);
+				HibernateToDoListDAO.getInstance().addTask(newTask);
 				request.setAttribute("RESULT", "Task  : "  + title + " was Added");
 			} 
 			catch (TaskExceptionHandler e) {

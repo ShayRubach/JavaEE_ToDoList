@@ -40,11 +40,11 @@ public class ModleTest <Junit> extends TestCase {
 	}
 
 	@Test
-	public void testAddNewTask() throws TaskExceptionHandler
+	public void testaddTask() throws TaskExceptionHandler
 	{
 		boolean con = false;
 		Task task = new Task ("Check_user", "check", "Check insertion", "done");
-		HibernateToDoListDAO.getInstance().addNewTask(task);
+		HibernateToDoListDAO.getInstance().addTask(task);
 		java.util.List<Task> tasks = HibernateToDoListDAO.getInstance().getTasks("Check_user");
 		java.util.Iterator i =(Iterator)tasks.iterator();
 		

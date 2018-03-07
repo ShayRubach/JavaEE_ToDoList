@@ -20,7 +20,7 @@ public interface IToDoListDao {
 	
 	/*********Tasks Methods list ************/
 	
-	public void addNewTask(Task task) throws TaskExceptionHandler;
+	public void addTask(Task task) throws TaskExceptionHandler;
 	
 
 	/**

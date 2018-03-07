@@ -35,8 +35,8 @@ public class HibernateToDoListDAO implements IToDoListDao
 		{
 			instance = new HibernateToDoListDAO();
 			factory = new AnnotationConfiguration().configure().buildSessionFactory();
-			taskFactory = new AnnotationConfiguration().configure("hibernateTask.cfg.xml").buildSessionFactory();
-			contactFactory = new AnnotationConfiguration().configure("hibernateContact.cfg.xml").buildSessionFactory();
+			taskFactory = new AnnotationConfiguration().configure("hibernate.cfg.xml").buildSessionFactory();
+			contactFactory = new AnnotationConfiguration().configure("hibernate.cfg.xml").buildSessionFactory();
 		}
 		return instance;
 	}
@@ -152,7 +152,7 @@ public class HibernateToDoListDAO implements IToDoListDao
 
 
 	@Override
-	public void addNewTask(Task task) throws TaskExceptionHandler
+	public void addTask(Task task) throws TaskExceptionHandler
 	{
 		//get session
 		Session session = taskFactory.openSession();
